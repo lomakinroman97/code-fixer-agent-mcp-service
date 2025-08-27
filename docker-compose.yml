@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  codefixer-agent:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - /Users/lomakin_r/AndroidStudioProjects/chat_llm_code_helper:/Users/lomakin_r/AndroidStudioProjects/chat_llm_code_helper:ro
+      - ./logs:/app/logs
+    environment:
+      - JAVA_OPTS=-Xmx512m -Xms256m
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

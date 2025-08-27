@@ -1,0 +1,706 @@
+2025-08-27 18:47:29 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2025-08-27 18:47:30 [main] INFO  com.codefixer.Application - CodeFixerAgent server started on port 8080
+2025-08-27 18:47:30 [main] INFO  ktor.application - Application started in 0.563 seconds.
+2025-08-27 18:47:30 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:8080
+2025-08-27 18:47:53 [KtorShutdownHook] INFO  com.codefixer.Application - Application is stopping, closing services...
+2025-08-27 18:49:14 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2025-08-27 18:49:15 [main] INFO  com.codefixer.Application - CodeFixerAgent server started on port 8080
+2025-08-27 18:49:15 [main] INFO  ktor.application - Application started in 0.516 seconds.
+2025-08-27 18:49:15 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:8080
+2025-08-27 18:50:32 [eventLoopGroupProxy-4-3] INFO  com.codefixer.routes.FixRoutes - Received fix request
+2025-08-27 18:50:32 [eventLoopGroupProxy-4-3] INFO  com.codefixer.routes.FixRoutes - Request: file_path=src/main/kotlin/com/codefixer/Application.kt, bug_description=Проверка работы API
+2025-08-27 18:50:32 [eventLoopGroupProxy-4-3] INFO  c.c.services.CodeFixerService - Processing fix request for file: src/main/kotlin/com/codefixer/Application.kt
+2025-08-27 18:50:33 [eventLoopGroupProxy-4-3] WARN  com.codefixer.routes.FixRoutes - Error processing fix request: File not found: src/main/kotlin/com/codefixer/Application.kt
+2025-08-27 18:50:41 [eventLoopGroupProxy-4-4] INFO  com.codefixer.routes.FixRoutes - Received fix request
+2025-08-27 18:50:41 [eventLoopGroupProxy-4-4] INFO  com.codefixer.routes.FixRoutes - Request: file_path=src/main/kotlin/com/codefixer/Application.kt, bug_description=Проверка работы API
+2025-08-27 18:50:41 [eventLoopGroupProxy-4-4] INFO  c.c.services.CodeFixerService - Processing fix request for file: src/main/kotlin/com/codefixer/Application.kt
+2025-08-27 18:50:41 [eventLoopGroupProxy-4-4] WARN  com.codefixer.routes.FixRoutes - Error processing fix request: File not found: src/main/kotlin/com/codefixer/Application.kt
+2025-08-27 18:51:36 [eventLoopGroupProxy-4-5] INFO  com.codefixer.routes.FixRoutes - Received fix request
+2025-08-27 18:51:36 [eventLoopGroupProxy-4-5] INFO  com.codefixer.routes.FixRoutes - Request: file_path=app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt, bug_description=Проверка работы API с реальным файлом
+2025-08-27 18:51:36 [eventLoopGroupProxy-4-5] INFO  c.c.services.CodeFixerService - Processing fix request for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:51:36 [eventLoopGroupProxy-4-5] INFO  com.codefixer.services.FileService - Successfully read file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt (7574 characters)
+2025-08-27 18:51:36 [eventLoopGroupProxy-4-5] INFO  c.c.services.CodeFixerService - Code optimized: 7574 -> 6733 characters
+2025-08-27 18:51:36 [eventLoopGroupProxy-4-5] INFO  c.c.services.YandexGptService - Sending request to Yandex GPT for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:51:52 [eventLoopGroupProxy-4-5] ERROR c.c.services.YandexGptService - Error calling Yandex GPT API
+io.ktor.client.plugins.HttpRequestTimeoutException: Request timeout has expired [url=https://llm.api.cloud.yandex.net/foundationModels/v1/completion, request_timeout=unknown ms]
+	at io.ktor.client.engine.cio.EndpointKt$setupTimeout$timeoutJob$1.invokeSuspend(Endpoint.kt:307)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-08-27 18:51:52 [eventLoopGroupProxy-4-5] ERROR c.c.services.CodeFixerService - Failed to get fixed code from Yandex GPT for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:51:52 [eventLoopGroupProxy-4-5] WARN  com.codefixer.routes.FixRoutes - Error processing fix request: Failed to get fixed code from AI service
+2025-08-27 18:52:15 [main] INFO  com.codefixer.Application - Application is stopping, closing services...
+2025-08-27 18:54:03 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2025-08-27 18:54:03 [main] INFO  com.codefixer.Application - CodeFixerAgent server started on port 8080
+2025-08-27 18:54:03 [main] INFO  ktor.application - Application started in 0.432 seconds.
+2025-08-27 18:54:03 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:8080
+2025-08-27 18:54:29 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Received fix request
+2025-08-27 18:54:29 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Request: file_path=app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt, bug_description=Проверка работы API с улучшенным логированием
+2025-08-27 18:54:29 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Processing fix request for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:54:29 [eventLoopGroupProxy-4-1] INFO  com.codefixer.services.FileService - Successfully read file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt (7574 characters)
+2025-08-27 18:54:29 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Code optimized: 7574 -> 6733 characters
+2025-08-27 18:54:29 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Sending request to Yandex GPT for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:54:45 [eventLoopGroupProxy-4-1] ERROR c.c.services.YandexGptService - Error calling Yandex GPT API
+io.ktor.client.plugins.HttpRequestTimeoutException: Request timeout has expired [url=https://llm.api.cloud.yandex.net/foundationModels/v1/completion, request_timeout=unknown ms]
+	at io.ktor.client.engine.cio.EndpointKt$setupTimeout$timeoutJob$1.invokeSuspend(Endpoint.kt:307)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-08-27 18:54:45 [eventLoopGroupProxy-4-1] ERROR c.c.services.CodeFixerService - Failed to get fixed code from Yandex GPT for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:54:45 [eventLoopGroupProxy-4-1] WARN  com.codefixer.routes.FixRoutes - Error processing fix request: Failed to get fixed code from AI service
+2025-08-27 18:55:10 [main] INFO  com.codefixer.Application - Application is stopping, closing services...
+2025-08-27 18:56:07 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2025-08-27 18:56:08 [main] INFO  com.codefixer.Application - CodeFixerAgent server started on port 8080
+2025-08-27 18:56:08 [main] INFO  ktor.application - Application started in 0.704 seconds.
+2025-08-27 18:56:08 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:8080
+2025-08-27 18:56:32 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Received fix request
+2025-08-27 18:56:33 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Request: file_path=app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt, bug_description=Проверка с детальным логированием
+2025-08-27 18:56:33 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Processing fix request for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:56:33 [eventLoopGroupProxy-4-1] INFO  com.codefixer.services.FileService - Successfully read file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt (7574 characters)
+2025-08-27 18:56:33 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Code optimized: 7574 -> 6733 characters
+2025-08-27 18:56:33 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Sending request to Yandex GPT for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:56:33 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Request URL: https://llm.api.cloud.yandex.net/foundationModels/v1/completion
+2025-08-27 18:56:33 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Request body: YandexGptRequest(modelUri=gpt://b1gp9fidpabmov8j1rid/yandexgpt-lite, completionOptions=CompletionOptions(stream=false, temperature=0.6, maxTokens=2000, reasoningOptions=ReasoningOptions(mode=DISABLED)), messages=[Message(role=system, text=Найди ошибки в тексте и исправь их), Message(role=user, text=            You are a senior software engineer. Fix the bug in the following code.
+            Return ONLY the corrected code block in its entirety, without any explanations, comments, or surrounding text.
+            Bug Description: Проверка с детальным логированием
+            Code to fix (File: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt)
+            
+            package com.example.chat_llm_code_helper.ui.viewmodel
+
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.chat_llm_code_helper.data.model.ChatMessage
+import com.example.chat_llm_code_helper.data.repository.GptRepository
+import com.example.chat_llm_code_helper.ui.model.ChatMode
+import com.example.chat_llm_code_helper.ui.model.ChatState
+import com.example.chat_llm_code_helper.ui.model.Message
+import com.example.chat_llm_code_helper.ui.model.MessageRole
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
+
+class ChatViewModel : ViewModel() {
+    
+    private val repository = GptRepository()
+    
+    private val _chatState = MutableStateFlow(ChatState())
+    val chatState: StateFlow<ChatState> = _chatState.asStateFlow()
+
+    private val freeChatSystemMessage = "Режим свободного общения активирован. Вы можете общаться с ассистентом на любые темы."
+    
+    private val bugFixSystemMessage = "Активирован режим фикса багов. Прикрепите файл с исходным кодом и опишите в сообщении природу бага."
+    
+    private val bugFixSystemPrompt = """
+        Ты - эксперт-программист. Пользователь присылает тебе исходный код и описание проблемы. 
+        Твоя задача - проанализировать код, найти причину ошибки (бага) и предложить исправление. 
+        Предоставь исправленный код и краткое пояснение к решению. 
+        Отвечай только на вопросы, связанные с программированием. 
+        Если вопрос не о коде, вежливо откажись отвечать.
+    """.trimIndent()
+
+    fun switchMode(newMode: ChatMode) {
+        val currentState = _chatState.value
+        if (currentState.currentMode == newMode) return
+        
+        val systemMessage = when (newMode) {
+            ChatMode.FREE_CHAT -> freeChatSystemMessage
+            ChatMode.BUG_FIX -> bugFixSystemMessage
+        }
+        
+        val systemMsg = Message(
+            role = MessageRole.SYSTEM,
+            text = systemMessage
+        )
+        
+        _chatState.value = currentState.copy(
+            currentMode = newMode,
+            messages = currentState.messages + systemMsg,
+            attachedFileContent = null,
+            attachedFileName = null
+        )
+    }
+
+    fun sendMessage(text: String) {
+        if (text.isBlank()) return
+        
+        val currentState = _chatState.value
+
+        val estimatedTokens = estimateTokens(text, currentState.attachedFileContent)
+        val maxTokens = 6000 
+        
+        if (estimatedTokens > maxTokens) {
+            _chatState.value = currentState.copy(
+                error = "Запрос слишком большой (примерно $estimatedTokens токенов). Максимум: $maxTokens токенов. Попробуйте сократить описание или выбрать меньший файл."
+            )
+            return
+        }
+
+        val userMessage = Message(
+            role = MessageRole.USER,
+            text = text
+        )
+        
+        val updatedMessages = currentState.messages + userMessage
+        
+        _chatState.value = currentState.copy(
+            messages = updatedMessages,
+            isLoading = true,
+            error = null
+        )
+
+        viewModelScope.launch {
+            try {
+                val apiMessages = prepareApiMessages(updatedMessages, currentState.currentMode)
+                val result = repository.sendMessages(apiMessages)
+                
+                result.fold(
+                    onSuccess = { response ->
+                        val assistantMessage = Message(
+                            role = MessageRole.ASSISTANT,
+                            text = response
+                        )
+                        
+                        _chatState.value = _chatState.value.copy(
+                            messages = _chatState.value.messages + assistantMessage,
+                            isLoading = false
+                        )
+                    },
+                    onFailure = { error ->
+                        _chatState.value = _chatState.value.copy(
+                            isLoading = false,
+                            error = error.message ?: "Произошла ошибка"
+                        )
+                    }
+                )
+            } catch (e: Exception) {
+                _chatState.value = _chatState.value.copy(
+                    isLoading = false,
+                    error = e.message ?: "Произошла ошибка"
+                )
+            }
+        }
+    }
+
+    fun attachFile(content: String, fileName: String) {
+        _chatState.value = _chatState.value.copy(
+            attachedFileContent = content,
+            attachedFileName = fileName
+        )
+    }
+
+    fun clearError() {
+        _chatState.value = _chatState.value.copy(error = null)
+    }
+
+    fun setError(message: String) {
+        _chatState.value = _chatState.value.copy(error = message)
+    }
+
+    private fun prepareApiMessages(
+        messages: List<Message>,
+        mode: ChatMode
+    ): List<ChatMessage> {
+        val apiMessages = mutableListOf<ChatMessage>()
+        var systemPromptAdded = false
+        
+        for (message in messages) {
+            when (message.role) {
+                MessageRole.SYSTEM -> {
+                    
+                    continue
+                }
+                MessageRole.USER -> {
+                    val messageText = if (mode == ChatMode.BUG_FIX && !systemPromptAdded) {
+                        systemPromptAdded = true
+                        val currentState = _chatState.value
+                        val fileContent = currentState.attachedFileContent
+                        
+                        if (fileContent != null) {
+                            "$bugFixSystemPrompt\n\nИсходный код:\n```\n$fileContent\n```\n\nОписание проблемы: ${message.text}"
+                        } else {
+                            "$bugFixSystemPrompt\n\n${message.text}"
+                        }
+                    } else {
+                        message.text
+                    }
+                    
+                    apiMessages.add(ChatMessage(role = "user", text = messageText))
+                }
+                MessageRole.ASSISTANT -> {
+                    apiMessages.add(ChatMessage(role = "assistant", text = message.text))
+                }
+            }
+        }
+        
+        return apiMessages
+    }
+
+    private fun estimateTokens(userText: String, fileContent: String?): Int {
+        val systemPromptTokens = 200 
+        val userTextTokens = (userText.length / 4.0).toInt()
+        val fileContentTokens = if (fileContent != null) (fileContent.length / 4.0).toInt() else 0
+        
+        return systemPromptTokens + userTextTokens + fileContentTokens
+    }
+})])
+2025-08-27 18:56:49 [eventLoopGroupProxy-4-1] ERROR c.c.services.YandexGptService - Error calling Yandex GPT API: Request timeout has expired [url=https://llm.api.cloud.yandex.net/foundationModels/v1/completion, request_timeout=unknown ms]
+io.ktor.client.plugins.HttpRequestTimeoutException: Request timeout has expired [url=https://llm.api.cloud.yandex.net/foundationModels/v1/completion, request_timeout=unknown ms]
+	at io.ktor.client.engine.cio.EndpointKt$setupTimeout$timeoutJob$1.invokeSuspend(Endpoint.kt:307)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-08-27 18:56:49 [eventLoopGroupProxy-4-1] ERROR c.c.services.CodeFixerService - Failed to get fixed code from Yandex GPT for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:56:49 [eventLoopGroupProxy-4-1] WARN  com.codefixer.routes.FixRoutes - Error processing fix request: Failed to get fixed code from AI service
+2025-08-27 18:57:01 [main] INFO  com.codefixer.Application - Application is stopping, closing services...
+2025-08-27 18:57:15 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2025-08-27 18:57:15 [main] INFO  com.codefixer.Application - CodeFixerAgent server started on port 8080
+2025-08-27 18:57:15 [main] INFO  ktor.application - Application started in 0.672 seconds.
+2025-08-27 18:57:16 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:8080
+2025-08-27 18:57:32 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Received fix request
+2025-08-27 18:57:32 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Request: file_path=app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt, bug_description=Тест с полным логированием
+2025-08-27 18:57:32 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Processing fix request for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:57:32 [eventLoopGroupProxy-4-1] INFO  com.codefixer.services.FileService - Successfully read file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt (7574 characters)
+2025-08-27 18:57:32 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Code optimized: 7574 -> 6733 characters
+2025-08-27 18:57:32 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Sending request to Yandex GPT for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:57:32 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Request URL: https://llm.api.cloud.yandex.net/foundationModels/v1/completion
+2025-08-27 18:57:32 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Request body: YandexGptRequest(modelUri=gpt://b1gp9fidpabmov8j1rid/yandexgpt-lite, completionOptions=CompletionOptions(stream=false, temperature=0.6, maxTokens=2000, reasoningOptions=ReasoningOptions(mode=DISABLED)), messages=[Message(role=system, text=Найди ошибки в тексте и исправь их), Message(role=user, text=            You are a senior software engineer. Fix the bug in the following code.
+            Return ONLY the corrected code block in its entirety, without any explanations, comments, or surrounding text.
+            Bug Description: Тест с полным логированием
+            Code to fix (File: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt)
+            
+            package com.example.chat_llm_code_helper.ui.viewmodel
+
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.chat_llm_code_helper.data.model.ChatMessage
+import com.example.chat_llm_code_helper.data.repository.GptRepository
+import com.example.chat_llm_code_helper.ui.model.ChatMode
+import com.example.chat_llm_code_helper.ui.model.ChatState
+import com.example.chat_llm_code_helper.ui.model.Message
+import com.example.chat_llm_code_helper.ui.model.MessageRole
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
+
+class ChatViewModel : ViewModel() {
+    
+    private val repository = GptRepository()
+    
+    private val _chatState = MutableStateFlow(ChatState())
+    val chatState: StateFlow<ChatState> = _chatState.asStateFlow()
+
+    private val freeChatSystemMessage = "Режим свободного общения активирован. Вы можете общаться с ассистентом на любые темы."
+    
+    private val bugFixSystemMessage = "Активирован режим фикса багов. Прикрепите файл с исходным кодом и опишите в сообщении природу бага."
+    
+    private val bugFixSystemPrompt = """
+        Ты - эксперт-программист. Пользователь присылает тебе исходный код и описание проблемы. 
+        Твоя задача - проанализировать код, найти причину ошибки (бага) и предложить исправление. 
+        Предоставь исправленный код и краткое пояснение к решению. 
+        Отвечай только на вопросы, связанные с программированием. 
+        Если вопрос не о коде, вежливо откажись отвечать.
+    """.trimIndent()
+
+    fun switchMode(newMode: ChatMode) {
+        val currentState = _chatState.value
+        if (currentState.currentMode == newMode) return
+        
+        val systemMessage = when (newMode) {
+            ChatMode.FREE_CHAT -> freeChatSystemMessage
+            ChatMode.BUG_FIX -> bugFixSystemMessage
+        }
+        
+        val systemMsg = Message(
+            role = MessageRole.SYSTEM,
+            text = systemMessage
+        )
+        
+        _chatState.value = currentState.copy(
+            currentMode = newMode,
+            messages = currentState.messages + systemMsg,
+            attachedFileContent = null,
+            attachedFileName = null
+        )
+    }
+
+    fun sendMessage(text: String) {
+        if (text.isBlank()) return
+        
+        val currentState = _chatState.value
+
+        val estimatedTokens = estimateTokens(text, currentState.attachedFileContent)
+        val maxTokens = 6000 
+        
+        if (estimatedTokens > maxTokens) {
+            _chatState.value = currentState.copy(
+                error = "Запрос слишком большой (примерно $estimatedTokens токенов). Максимум: $maxTokens токенов. Попробуйте сократить описание или выбрать меньший файл."
+            )
+            return
+        }
+
+        val userMessage = Message(
+            role = MessageRole.USER,
+            text = text
+        )
+        
+        val updatedMessages = currentState.messages + userMessage
+        
+        _chatState.value = currentState.copy(
+            messages = updatedMessages,
+            isLoading = true,
+            error = null
+        )
+
+        viewModelScope.launch {
+            try {
+                val apiMessages = prepareApiMessages(updatedMessages, currentState.currentMode)
+                val result = repository.sendMessages(apiMessages)
+                
+                result.fold(
+                    onSuccess = { response ->
+                        val assistantMessage = Message(
+                            role = MessageRole.ASSISTANT,
+                            text = response
+                        )
+                        
+                        _chatState.value = _chatState.value.copy(
+                            messages = _chatState.value.messages + assistantMessage,
+                            isLoading = false
+                        )
+                    },
+                    onFailure = { error ->
+                        _chatState.value = _chatState.value.copy(
+                            isLoading = false,
+                            error = error.message ?: "Произошла ошибка"
+                        )
+                    }
+                )
+            } catch (e: Exception) {
+                _chatState.value = _chatState.value.copy(
+                    isLoading = false,
+                    error = e.message ?: "Произошла ошибка"
+                )
+            }
+        }
+    }
+
+    fun attachFile(content: String, fileName: String) {
+        _chatState.value = _chatState.value.copy(
+            attachedFileContent = content,
+            attachedFileName = fileName
+        )
+    }
+
+    fun clearError() {
+        _chatState.value = _chatState.value.copy(error = null)
+    }
+
+    fun setError(message: String) {
+        _chatState.value = _chatState.value.copy(error = message)
+    }
+
+    private fun prepareApiMessages(
+        messages: List<Message>,
+        mode: ChatMode
+    ): List<ChatMessage> {
+        val apiMessages = mutableListOf<ChatMessage>()
+        var systemPromptAdded = false
+        
+        for (message in messages) {
+            when (message.role) {
+                MessageRole.SYSTEM -> {
+                    
+                    continue
+                }
+                MessageRole.USER -> {
+                    val messageText = if (mode == ChatMode.BUG_FIX && !systemPromptAdded) {
+                        systemPromptAdded = true
+                        val currentState = _chatState.value
+                        val fileContent = currentState.attachedFileContent
+                        
+                        if (fileContent != null) {
+                            "$bugFixSystemPrompt\n\nИсходный код:\n```\n$fileContent\n```\n\nОписание проблемы: ${message.text}"
+                        } else {
+                            "$bugFixSystemPrompt\n\n${message.text}"
+                        }
+                    } else {
+                        message.text
+                    }
+                    
+                    apiMessages.add(ChatMessage(role = "user", text = messageText))
+                }
+                MessageRole.ASSISTANT -> {
+                    apiMessages.add(ChatMessage(role = "assistant", text = message.text))
+                }
+            }
+        }
+        
+        return apiMessages
+    }
+
+    private fun estimateTokens(userText: String, fileContent: String?): Int {
+        val systemPromptTokens = 200 
+        val userTextTokens = (userText.length / 4.0).toInt()
+        val fileContentTokens = if (fileContent != null) (fileContent.length / 4.0).toInt() else 0
+        
+        return systemPromptTokens + userTextTokens + fileContentTokens
+    }
+})])
+2025-08-27 18:57:48 [eventLoopGroupProxy-4-1] ERROR c.c.services.YandexGptService - Error calling Yandex GPT API: Request timeout has expired [url=https://llm.api.cloud.yandex.net/foundationModels/v1/completion, request_timeout=unknown ms]
+io.ktor.client.plugins.HttpRequestTimeoutException: Request timeout has expired [url=https://llm.api.cloud.yandex.net/foundationModels/v1/completion, request_timeout=unknown ms]
+	at io.ktor.client.engine.cio.EndpointKt$setupTimeout$timeoutJob$1.invokeSuspend(Endpoint.kt:307)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-08-27 18:57:48 [eventLoopGroupProxy-4-1] ERROR c.c.services.CodeFixerService - Failed to get fixed code from Yandex GPT for file: app/src/main/java/com/example/chat_llm_code_helper/ui/viewmodel/ChatViewModel.kt
+2025-08-27 18:57:48 [eventLoopGroupProxy-4-1] WARN  com.codefixer.routes.FixRoutes - Error processing fix request: Failed to get fixed code from AI service
+2025-08-27 18:58:09 [main] INFO  com.codefixer.Application - Application is stopping, closing services...
+2025-08-27 18:58:24 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2025-08-27 18:58:24 [main] INFO  com.codefixer.Application - CodeFixerAgent server started on port 8080
+2025-08-27 18:58:24 [main] INFO  ktor.application - Application started in 0.677 seconds.
+2025-08-27 18:58:25 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:8080
+2025-08-27 19:00:22 [KtorShutdownHook] INFO  com.codefixer.Application - Application is stopping, closing services...
+2025-08-27 19:05:12 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2025-08-27 19:05:12 [main] INFO  com.codefixer.Application - CodeFixerAgent server started on port 8080
+2025-08-27 19:05:12 [main] INFO  ktor.application - Application started in 0.629 seconds.
+2025-08-27 19:05:13 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:8080
+2025-08-27 19:05:38 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Received fix request
+2025-08-27 19:05:38 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Request: file_path=app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt, bug_description=Проверка работы API с маленьким файлом
+2025-08-27 19:05:38 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Processing fix request for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
+2025-08-27 19:05:38 [eventLoopGroupProxy-4-1] INFO  com.codefixer.services.FileService - Successfully read file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt (984 characters)
+2025-08-27 19:05:38 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Code optimized: 984 -> 942 characters
+2025-08-27 19:05:38 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Sending request to Yandex GPT for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
+2025-08-27 19:05:38 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Request URL: https://llm.api.cloud.yandex.net/foundationModels/v1/completion
+2025-08-27 19:05:38 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Code length: 942 characters
+2025-08-27 19:05:38 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Prompt length: 1358 characters
+2025-08-27 19:05:43 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Received response from Yandex GPT
+2025-08-27 19:05:43 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Response result: Result(alternatives=[Alternative(message=Message(role=assistant, text=```
+package com.example.chat_llm_code_helper.ui.components
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+
+@Composable
+fun LoadingIndicator(
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        CircularProgressIndicator(
+            modifier = Modifier.padding(end = 8.dp)
+        )
+        Text(text = "Sending message...")
+    }
+}
+```))])
+2025-08-27 19:05:43 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Response alternatives count: 1
+2025-08-27 19:05:43 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - First alternative: Alternative(message=Message(role=assistant, text=```
+package com.example.chat_llm_code_helper.ui.components
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+
+@Composable
+fun LoadingIndicator(
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        CircularProgressIndicator(
+            modifier = Modifier.padding(end = 8.dp)
+        )
+        Text(text = "Sending message...")
+    }
+}
+```))
+2025-08-27 19:05:43 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Message: Message(role=assistant, text=```
+package com.example.chat_llm_code_helper.ui.components
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+
+@Composable
+fun LoadingIndicator(
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        CircularProgressIndicator(
+            modifier = Modifier.padding(end = 8.dp)
+        )
+        Text(text = "Sending message...")
+    }
+}
+```)
+2025-08-27 19:05:43 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Successfully extracted fixed code (947 characters)
+2025-08-27 19:05:43 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Code successfully fixed for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
+2025-08-27 19:05:43 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Successfully processed fix request for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
+2025-08-27 19:05:58 [main] INFO  com.codefixer.Application - Application is stopping, closing services...
+2025-08-27 19:27:50 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2025-08-27 19:27:50 [main] INFO  com.codefixer.Application - CodeFixerAgent server started on port 8080
+2025-08-27 19:27:50 [main] INFO  ktor.application - Application started in 0.798 seconds.
+2025-08-27 19:27:51 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:8080
+2025-08-27 19:28:27 [eventLoopGroupProxy-4-2] INFO  com.codefixer.routes.FixRoutes - Received fix request
+2025-08-27 19:28:27 [eventLoopGroupProxy-4-2] INFO  com.codefixer.routes.FixRoutes - Request: file_path=app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt, bug_description=компонент располагается слева на экране, а должен располагаться по середине
+2025-08-27 19:28:27 [eventLoopGroupProxy-4-2] INFO  c.c.services.CodeFixerService - Processing fix request for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
+2025-08-27 19:28:27 [eventLoopGroupProxy-4-2] INFO  com.codefixer.services.FileService - Successfully read file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt (983 characters)
+2025-08-27 19:28:27 [eventLoopGroupProxy-4-2] INFO  c.c.services.CodeFixerService - Code optimized: 983 -> 941 characters
+2025-08-27 19:28:27 [eventLoopGroupProxy-4-2] INFO  c.c.services.YandexGptService - Sending request to Yandex GPT for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
+2025-08-27 19:28:27 [eventLoopGroupProxy-4-2] INFO  c.c.services.YandexGptService - Request URL: https://llm.api.cloud.yandex.net/foundationModels/v1/completion
+2025-08-27 19:28:27 [eventLoopGroupProxy-4-2] INFO  c.c.services.YandexGptService - Code length: 941 characters
+2025-08-27 19:28:27 [eventLoopGroupProxy-4-2] INFO  c.c.services.YandexGptService - Prompt length: 1394 characters
+2025-08-27 19:28:32 [eventLoopGroupProxy-4-2] INFO  c.c.services.YandexGptService - Received response from Yandex GPT
+2025-08-27 19:28:32 [eventLoopGroupProxy-4-2] INFO  c.c.services.YandexGptService - Response result: Result(alternatives=[Alternative(message=Message(role=assistant, text=```
+package com.example.chat_llm_code_helper.ui.components
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+
+@Composable
+fun LoadingIndicator(
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        CircularProgressIndicator(
+            modifier = Modifier.padding(end = 8.dp)
+        )
+        Text(text = "Отправка сообщения...")
+    }
+}
+```))])
+2025-08-27 19:28:32 [eventLoopGroupProxy-4-2] INFO  c.c.services.YandexGptService - Response alternatives count: 1
+2025-08-27 19:28:32 [eventLoopGroupProxy-4-2] INFO  c.c.services.YandexGptService - First alternative: Alternative(message=Message(role=assistant, text=```
+package com.example.chat_llm_code_helper.ui.components
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+
+@Composable
+fun LoadingIndicator(
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        CircularProgressIndicator(
+            modifier = Modifier.padding(end = 8.dp)
+        )
+        Text(text = "Отправка сообщения...")
+    }
+}
+```))
+2025-08-27 19:28:33 [eventLoopGroupProxy-4-2] INFO  c.c.services.YandexGptService - Message: Message(role=assistant, text=```
+package com.example.chat_llm_code_helper.ui.components
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+
+@Composable
+fun LoadingIndicator(
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        CircularProgressIndicator(
+            modifier = Modifier.padding(end = 8.dp)
+        )
+        Text(text = "Отправка сообщения...")
+    }
+}
+```)
+2025-08-27 19:28:33 [eventLoopGroupProxy-4-2] INFO  c.c.services.YandexGptService - Successfully extracted fixed code (950 characters)
+2025-08-27 19:28:33 [eventLoopGroupProxy-4-2] INFO  c.c.services.CodeFixerService - Code successfully fixed for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
+2025-08-27 19:28:33 [eventLoopGroupProxy-4-2] INFO  com.codefixer.routes.FixRoutes - Successfully processed fix request for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
+2025-08-27 19:28:50 [main] INFO  com.codefixer.Application - Application is stopping, closing services...
