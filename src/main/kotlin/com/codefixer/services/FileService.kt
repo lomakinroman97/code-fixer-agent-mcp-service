@@ -41,6 +41,7 @@ class FileService(
     fun optimizeCode(code: String): String {
         var optimized = code
             .removeComments()
+            .removeImports() // Новый этап: удаление импортов
             .removeExtraEmptyLines()
             .trim()
         
@@ -64,6 +65,54 @@ class FileService(
         result = result.replace(Regex("//.*$", RegexOption.MULTILINE), "")
         
         return result
+    }
+
+    /**
+     * Удаляет импорты для экономии токенов
+     * LLM может работать без импортов, так как понимает контекст
+     */
+    private fun String.removeImports(): String {
+        val lines = this.split("\n")
+        val filteredLines = mutableListOf<String>()
+        var inImportBlock = false
+        var importBlockEnded = false
+        
+        for (line in lines) {
+            val trimmedLine = line.trim()
+            
+            // Начинаем блок импортов
+            if (trimmedLine.startsWith("import ")) {
+                inImportBlock = true
+                continue // Пропускаем строку импорта
+            }
+            
+            // Если мы в блоке импортов и встретили пустую строку, заканчиваем блок
+            if (inImportBlock && trimmedLine.isEmpty()) {
+                inImportBlock = false
+                importBlockEnded = true
+                continue // Пропускаем пустую строку после импортов
+            }
+            
+            // Если мы в блоке импортов, продолжаем пропускать строки
+            if (inImportBlock) {
+                continue
+            }
+            
+            // Если блок импортов закончился и встретили еще одну пустую строку, пропускаем
+            if (importBlockEnded && trimmedLine.isEmpty()) {
+                continue
+            }
+            
+            // Сбрасываем флаг после первой непустой строки после импортов
+            if (importBlockEnded && trimmedLine.isNotEmpty()) {
+                importBlockEnded = false
+            }
+            
+            // Добавляем строку, если она не импорт
+            filteredLines.add(line)
+        }
+        
+        return filteredLines.joinToString("\n")
     }
 
     /**

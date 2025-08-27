@@ -704,3 +704,84 @@ fun LoadingIndicator(
 2025-08-27 19:28:33 [eventLoopGroupProxy-4-2] INFO  c.c.services.CodeFixerService - Code successfully fixed for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
 2025-08-27 19:28:33 [eventLoopGroupProxy-4-2] INFO  com.codefixer.routes.FixRoutes - Successfully processed fix request for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
 2025-08-27 19:28:50 [main] INFO  com.codefixer.Application - Application is stopping, closing services...
+2025-08-27 19:40:00 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2025-08-27 19:40:00 [main] INFO  com.codefixer.Application - CodeFixerAgent server started on port 8080
+2025-08-27 19:40:00 [main] INFO  ktor.application - Application started in 0.545 seconds.
+2025-08-27 19:40:00 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:8080
+2025-08-27 19:43:47 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Received fix request
+2025-08-27 19:43:48 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Request: file_path=app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt, bug_description=индикатор располагается слева на экране, а должен быть в центре экрана
+2025-08-27 19:43:48 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Processing fix request for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
+2025-08-27 19:43:48 [eventLoopGroupProxy-4-1] INFO  com.codefixer.services.FileService - Successfully read file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt (983 characters)
+2025-08-27 19:43:48 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Code optimized: 983 -> 485 characters
+2025-08-27 19:43:48 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Sending request to Yandex GPT for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
+2025-08-27 19:43:48 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Request URL: https://llm.api.cloud.yandex.net/foundationModels/v1/completion
+2025-08-27 19:43:48 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Code length: 485 characters
+2025-08-27 19:43:48 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Prompt length: 933 characters
+2025-08-27 19:43:51 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Received response from Yandex GPT
+2025-08-27 19:43:51 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Response result: Result(alternatives=[Alternative(message=Message(role=assistant, text=```
+package com.example.chat_llm_code_helper.ui.components
+
+@Composable
+fun LoadingIndicator(
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        CircularProgressIndicator(
+            modifier = Modifier.padding(end = 8.dp)
+        )
+        Text(text = "Отправка сообщения...")
+    }
+}
+```))])
+2025-08-27 19:43:51 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Response alternatives count: 1
+2025-08-27 19:43:51 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - First alternative: Alternative(message=Message(role=assistant, text=```
+package com.example.chat_llm_code_helper.ui.components
+
+@Composable
+fun LoadingIndicator(
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        CircularProgressIndicator(
+            modifier = Modifier.padding(end = 8.dp)
+        )
+        Text(text = "Отправка сообщения...")
+    }
+}
+```))
+2025-08-27 19:43:51 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Message: Message(role=assistant, text=```
+package com.example.chat_llm_code_helper.ui.components
+
+@Composable
+fun LoadingIndicator(
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        CircularProgressIndicator(
+            modifier = Modifier.padding(end = 8.dp)
+        )
+        Text(text = "Отправка сообщения...")
+    }
+}
+```)
+2025-08-27 19:43:51 [eventLoopGroupProxy-4-1] INFO  c.c.services.YandexGptService - Successfully extracted fixed code (494 characters)
+2025-08-27 19:43:51 [eventLoopGroupProxy-4-1] INFO  c.c.services.CodeFixerService - Code successfully fixed for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
+2025-08-27 19:43:51 [eventLoopGroupProxy-4-1] INFO  com.codefixer.routes.FixRoutes - Successfully processed fix request for file: app/src/main/java/com/example/chat_llm_code_helper/ui/components/LoadingIndicator.kt
