@@ -14,7 +14,7 @@ import mu.KotlinLogging
 import java.util.concurrent.TimeUnit
 
 class YandexGptService(
-    private val apiKey: String = "",
+    private val apiKey: String = System.getenv("YANDEX_GPT_API_KEY") ?: "",
     private val baseUrl: String = "https://llm.api.cloud.yandex.net"
 ) {
     private val logger = KotlinLogging.logger {}

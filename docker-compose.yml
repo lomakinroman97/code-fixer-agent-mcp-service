@@ -2,14 +2,19 @@ version: '3.8'
 
 services:
   codefixer-agent:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
-    volumes:
-      - /Users/lomakin_r/AndroidStudioProjects/chat_llm_code_helper:/Users/lomakin_r/AndroidStudioProjects/chat_llm_code_helper:ro
-      - ./logs:/app/logs
     environment:
-      - JAVA_OPTS=-Xmx512m -Xms256m
+      - YANDEX_GPT_API_KEY=${YANDEX_GPT_API_KEY}
+      - CODEBASE_ROOT=/app/codebase
+    volumes:
+      # Монтируем код для анализа
+      - /Users/lomakin_r/AndroidStudioProjects/chat_llm_code_helper:/app/codebase:ro
+      # Монтируем логи
+      - ./logs:/app/logs
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/health"]

@@ -4,7 +4,7 @@ import mu.KotlinLogging
 import java.io.File
 
 class FileService(
-    private val rootDirectory: String = "/Users/lomakin_r/AndroidStudioProjects/chat_llm_code_helper/",
+    private val rootDirectory: String = System.getenv("CODEBASE_ROOT") ?: "/Users/lomakin_r/AndroidStudioProjects/chat_llm_code_helper/",
     private val maxFileSize: Int = 4000 // Максимальный размер файла в символах для API
 ) {
     private val logger = KotlinLogging.logger {}
